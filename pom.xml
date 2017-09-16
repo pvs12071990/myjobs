@@ -51,6 +51,18 @@
 			<groupId>org.jacoco</groupId>
 			<artifactId>jacoco-maven-plugin</artifactId>				    
 		</plugin> -->
+	<plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.0.0</version>
+                    <goals>
+                      <goal>clean</goal>
+                    </goals>
+                    <configuration>
+                    <filesets><fileset>   
+                    <directory>${basedir}/target</directory>
+                    </fileset></filesets>
+                    </configuration>
+             </plugin>
 
 			
 	<plugin>
